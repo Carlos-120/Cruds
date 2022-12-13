@@ -1,0 +1,245 @@
+html {
+    box-sizing: border-box;
+    background-color: #f0e8eea1;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    color: #000000ce;
+    text-transform: uppercase;
+}
+
+/*========================  Header Container  ========================0*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.header__btn {
+    padding: 8px 12px;
+    color: white;
+    background-color: #555A88;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 150ms filter ease-in-out;
+
+}
+
+.header__btn:hover {
+    filter: brightness(1.1);
+}
+
+
+
+/* ================  Card users - Container  =================== */
+.users-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+
+/* ================  Card Users  =================== */
+.user {
+    border: 1px solid #9e9797;
+    background-image: url(https://image.freepik.com/free-photo/white-background-wallpaper-by-crumpled-paper-texture-free-space_33771-635.jpg);
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: 100ms box-shadow ease-in-out;
+}
+
+.user:hover {
+    box-shadow: 1px 1px 15px #0003;
+    filter: drop-shadow(2px 2px 5px rgb(26, 33, 34));
+}
+
+.user__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.user__item span {
+    color: #1d35e1;
+}
+
+.user__item span i {
+    color: #000;
+    margin-right: 4px;
+}
+
+.user__container-btn {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.user__btn {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.user__btn2 {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.user__btn:first-child {
+    background-color: #D85D5D;
+    color: white;
+}
+
+.user__btn2:last-child {
+    background-color: #51ceff;
+    color: white;
+}
+
+.user__btn:last-child {
+    color: #aaaaaa;
+}
+
+.user__btn2:last-child {
+    color: #353333;
+}
+
+.user__btn2:hover {
+    filter: drop-shadow(2px 2px 5px rgb(55, 174, 182));
+    background-color: rgb(0, 238, 255);
+}
+
+.user__btn:hover {
+    filter: drop-shadow(2px 2px 5px rgb(218, 39, 39));
+    background-color: rgb(255, 0, 0);
+}
+
+/*================  Modal  ===================*/
+.container-form {
+    position: fixed;
+    background-color: #0003;
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    top: 0;
+    min-height: 100vh;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form.disable-form {
+    display: none;
+}
+
+.form {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+}
+
+.form__x {
+    position: absolute;
+    top: 0;
+    color: #D85D5D;
+    font-size: 30px;
+    right: 10px;
+    cursor: pointer;
+    transition: 200ms transform ease-in-out;
+}
+
+.form__x:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(2px 2px 5px rgb(218, 39, 39));
+}
+
+.form__title {
+    font-size: 24px;
+}
+
+.form__div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.form__label {
+    font-size: 13px;
+    color: #000;
+}
+
+.form__input {
+    font-family: inherit;
+    padding: 8px 10px;
+}
+
+.form__input:hover {
+    background-color: #eceaea;
+}
+
+.form__btn {
+    width: 100%;
+    padding: 8px 12px;
+    color: white;
+    background-color: #555A88;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 150ms filter ease-in-out;
+}
+
+.form__btn:hover {
+    filter: brightness(1.2);
+    background-color: rgb(15, 11, 240);
+}
+
+.err_alert {
+    color: red;
+    font-size: 13px;
+}
